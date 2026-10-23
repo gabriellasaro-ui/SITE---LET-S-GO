@@ -159,14 +159,14 @@ export default function FestasPage() {
         </div>
       </section>
       <SoftCurve from="accent" to="paper" flip />
-      <section className="bg-paper py-24 md:py-32">
+      <section id="outras-ocasioes" className="bg-paper scroll-mt-20 py-24 md:py-32">
         <div className="container-site">
           <SectionHeading
             eyebrow="Outras ocasiões"
             title="A estrutura da Let’s Go também recebe outros eventos."
             description="O mesmo salão climatizado, com painel de LED e vista para a lagoa, está preparado para celebrações de todas as idades."
           />
-          <Stagger as="ul" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" stagger={0.1}>
+          <Stagger as="ul" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5" stagger={0.1}>
             {occasions.map((o, i) => (
               <StaggerItem as="li" key={o.title} className="border-ink-950/8 h-full rounded-[2rem] border bg-white p-8">
                 <span

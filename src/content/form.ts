@@ -3,6 +3,7 @@ export const eventTypes = [
   'Festa Coquetel',
   'Festa Kids',
   'Festa de 15 anos',
+  'Formatura',
   'Evento social',
   'Evento corporativo',
   'Ainda não sei',

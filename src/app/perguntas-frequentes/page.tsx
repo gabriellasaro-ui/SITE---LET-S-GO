@@ -34,7 +34,7 @@ export default function FaqPage() {
         image={photos.bannerDuvidas}
         title="Perguntas frequentes sobre a Let’s Go Festas."
         highlight={{ Perguntas: 'text-sticker-primary', Festas: 'text-sticker-accent' }}
-        description="Reunimos as dúvidas mais comuns de quem procura um buffet infantil em Belo Horizonte. Respostas rápidas para você planejar a festa com tranquilidade."
+        description="Reunimos as dúvidas mais comuns de quem procura um espaço para festas infantis em Belo Horizonte. Respostas rápidas para você planejar a festa com tranquilidade."
       />
       <section className="bg-paper py-20 md:py-28">
         <div className="container-site grid gap-12 lg:grid-cols-[260px_1fr] lg:gap-20">

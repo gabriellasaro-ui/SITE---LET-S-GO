@@ -16,7 +16,7 @@ import { FunZoneSection } from '@/components/sections/FunZoneSection'
 import { SoftCurve } from '@/components/ui/SoftCurve'
 import { FinalCta } from '@/components/sections/FinalCta'
 
-const title = 'Estrutura do buffet e Espaço Diversão'
+const title = 'Estrutura da Let’s Go e Espaço Diversão'
 const description =
   'Salão climatizado com vista para a Lagoa da Pampulha, sala VIP, fraldário, estacionamento e Espaço Diversão com Kid Play de 18 m, Cinema 6D e escorregador 360º.'
 

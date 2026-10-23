@@ -8,17 +8,17 @@ const socialIcon: Record<string, IconName> = { Instagram: 'instagram', Facebook:
 
 export function Footer() {
   const year = new Date().getFullYear()
+  const brandMark = site.seal ?? site.logo
   return (
     <footer className="bg-accent-700 relative overflow-hidden text-white">
       <div className="container-site grid gap-12 pt-16 pb-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div>
           <Image
-            src={site.logo.src}
-            unoptimized
-            alt={site.logo.alt}
-            width={site.logo.width}
-            height={site.logo.height}
-            className="h-16 w-auto"
+            src={brandMark.src}
+            alt={brandMark.alt}
+            width={brandMark.width}
+            height={brandMark.height}
+            className="h-28 w-auto"
           />
           <p className="mt-5 max-w-sm text-white/90">
             {site.yearsOfHistory} anos fazendo festas infantis inesquecíveis {site.address.landmark}, em{' '}
@@ -74,6 +74,14 @@ export function Footer() {
                 className="hover:text-accent-100 inline-block transition hover:translate-x-1"
               >
                 Festa Kids
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/festas#outras-ocasioes"
+                className="hover:text-accent-100 inline-block transition hover:translate-x-1"
+              >
+                Formaturas
               </Link>
             </li>
             <li>

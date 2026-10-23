@@ -62,10 +62,10 @@ export function FunZoneSection({ compact, showLink = true, id }: Props) {
           eyebrow="Espaço Diversão"
           title={
             <>
-              Um parque de diversões <span className="text-sticker-primary">inteirinho</span> dentro do buffet.
+              Um parque de diversões <span className="text-sticker-primary">inteirinho</span> dentro da Let’s Go.
             </>
           }
-          description="Enquanto os adultos aproveitam o salão, a criançada explora um mundo de brinquedos, games e aventuras, com estrutura pensada para a segurança dos pequenos."
+          description="Enquanto os adultos aproveitam o salão, a criançada se diverte no Kid Play, no escorregador 360º e no Cinema 6D, com estrutura pensada para a segurança dos pequenos."
           action={
             showLink ? (
               <ButtonLink href="/estrutura#espaco-diversao" variant="light" icon="arrowRight">
@@ -119,25 +119,27 @@ export function FunZoneSection({ compact, showLink = true, id }: Props) {
           </Stagger>
         )}
 
-        {!compact && (
+        {!compact && funZone.length > highlights.length && (
           <Reveal>
             <h3 className="text-poster mt-12 mb-5 text-2xl">Todas as {funZone.length} atrações</h3>
           </Reveal>
         )}
-        <Stagger as="ul" className={cn('flex flex-wrap gap-2', compact && 'mt-8')} stagger={0.03}>
-          {chips.map((f) => (
-            <StaggerItem
-              as="li"
-              key={f.name}
-              className="text-ink-950 flex items-center gap-2 rounded-full bg-white py-1.5 pr-4 pl-1.5 text-sm font-extrabold shadow-[0_3px_0_#0f7476] transition duration-300 hover:-translate-y-0.5 hover:-rotate-2"
-            >
-              <span className="bg-accent-600 grid h-7 w-7 place-items-center rounded-full text-white">
-                <Icon name={f.icon} size={14} strokeWidth={2.4} />
-              </span>
-              {f.name}
-            </StaggerItem>
-          ))}
-        </Stagger>
+        {(compact || funZone.length > highlights.length) && (
+          <Stagger as="ul" className={cn('flex flex-wrap gap-2', compact && 'mt-8')} stagger={0.03}>
+            {chips.map((f) => (
+              <StaggerItem
+                as="li"
+                key={f.name}
+                className="text-ink-950 flex items-center gap-2 rounded-full bg-white py-1.5 pr-4 pl-1.5 text-sm font-extrabold shadow-[0_3px_0_#0f7476] transition duration-300 hover:-translate-y-0.5 hover:-rotate-2"
+              >
+                <span className="bg-accent-600 grid h-7 w-7 place-items-center rounded-full text-white">
+                  <Icon name={f.icon} size={14} strokeWidth={2.4} />
+                </span>
+                {f.name}
+              </StaggerItem>
+            ))}
+          </Stagger>
+        )}
       </div>
     </section>
   )

@@ -38,6 +38,7 @@ export function Header() {
   }, [pathname])
 
   const scrolled = !overHero
+  const brandMark = site.seal ?? site.logo
 
   return (
     <header
@@ -66,13 +67,12 @@ export function Header() {
           className="shrink-0 transition-transform duration-300 hover:scale-105 hover:-rotate-3"
         >
           <Image
-            src={site.logo.src}
-            unoptimized
-            alt={site.logo.alt}
-            width={site.logo.width}
-            height={site.logo.height}
+            src={brandMark.src}
+            alt={brandMark.alt}
+            width={brandMark.width}
+            height={brandMark.height}
             priority
-            className={cn('w-auto transition-[height] duration-500', scrolled ? 'h-11' : 'h-14')}
+            className={cn('w-auto transition-[height] duration-500', scrolled ? 'h-14' : 'h-[72px]')}
           />
         </Link>
 

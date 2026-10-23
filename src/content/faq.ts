@@ -33,7 +33,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: 'Que tipos de evento a Let’s Go recebe?',
         answer:
-          'O foco da Let’s Go são as festas infantis, com dois formatos: Festa Coquetel e Festa Kids. A estrutura também recebe festas de 15 anos, casamentos, aniversários adultos e eventos corporativos.',
+          'O foco da Let’s Go são as festas infantis, com dois formatos: Festa Coquetel e Festa Kids. A estrutura também recebe festas de 15 anos, formaturas, casamentos, aniversários adultos e eventos corporativos.',
       },
     ],
   },
@@ -80,8 +80,7 @@ export const faqGroups: FaqGroup[] = [
     items: [
       {
         question: 'Quais brinquedos e atrações a Let’s Go tem?',
-        answer:
-          'O Espaço Diversão tem Kid Play com 18 metros de percurso, escorregador 360º, tobogã gigante, Cinema 6D, cama elástica, piscina de bolinhas, Xbox com Kinect, pista de autorama, games diversos, campinho de futebol com sonorização, máquina de basquete, Carrossel de Cupcake, Vila Let’s Go e espaço baby tematizado.',
+        answer: 'O Espaço Diversão tem Kid Play com 18 metros de percurso, escorregador 360º e Cinema 6D.',
         featured: true,
       },
       {
@@ -99,8 +98,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         question: 'Tem fraldário para bebês?',
-        answer:
-          'Sim. A Let’s Go tem fraldário completo, com papinha Nestlé, fraldas e lenço umedecido, além de um espaço baby tematizado.',
+        answer: 'Sim. A Let’s Go tem fraldário completo, com papinha Nestlé, fraldas e lenço umedecido.',
       },
     ],
   },

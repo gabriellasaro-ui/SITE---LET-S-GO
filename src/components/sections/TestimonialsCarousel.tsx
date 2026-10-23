@@ -133,7 +133,7 @@ export function TestimonialsCarousel({ items, full = false }: { items: Testimoni
                     <Icon name="user" size={22} strokeWidth={2.2} />
                   </span>
                   <span className="min-w-0">
-                    <span className="block truncate font-bold">{t.author ?? 'Família da aniversariante'}</span>
+                    <span className="block truncate font-bold">{t.author ?? 'Família do aniversariante'}</span>
                     <span className="text-ink-950/70 text-sm">{t.party}</span>
                   </span>
                 </figcaption>
@@ -215,7 +215,7 @@ export function TestimonialsCarousel({ items, full = false }: { items: Testimoni
             <figcaption className="border-ink-950/8 mt-6 flex items-center gap-3 border-t pt-5">
               {reading.source === 'google' && <GoogleG size={24} />}
               <span>
-                <span className="block font-bold">{reading.author ?? 'Família da aniversariante'}</span>
+                <span className="block font-bold">{reading.author ?? 'Família do aniversariante'}</span>
                 <span className="text-ink-950/70 text-sm">{reading.party}</span>
               </span>
             </figcaption>

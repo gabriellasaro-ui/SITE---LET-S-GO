@@ -70,7 +70,7 @@ export const photos = {
     1441,
     'Decoração',
     'Festa de 1 ano • Floral',
-    'Festa de 1 ano com balanço de flores, lua, estrelas douradas e a aniversariante no centro do cenário',
+    'Cenário de festa de 1 ano com balanço de flores, lua e estrelas douradas',
   ),
   bannerGaleria: p(
     'banner-galeria-piscina-de-bolinhas',
@@ -86,7 +86,7 @@ export const photos = {
     1441,
     'Diversão',
     'Espaço Diversão',
-    'Espaço Diversão da Let’s Go Festas com Kid Play, escorregador em espiral amarelo e roxo, e mesa de air hockey',
+    'Espaço Diversão da Let’s Go Festas com Kid Play e escorregador em espiral amarelo e roxo',
   ),
   banner: p(
     'banner-fachada-lets-go-pampulha',
@@ -102,7 +102,7 @@ export const photos = {
     1707,
     'Espaço',
     'Túnel de neon na entrada',
-    "Túnel de arcos de neon coloridos na entrada da Let's Go Festas, buffet infantil na Pampulha",
+    "Túnel de arcos de neon coloridos na entrada da Let's Go Festas, na Pampulha",
   ),
   areaExterna: p(
     'area-externa-mesas-pampulha',
@@ -134,7 +134,7 @@ export const photos = {
     1280,
     'Diversão',
     'Vila Let’s Go',
-    'Vila Let’s Go com casinhas temáticas coloridas no Espaço Diversão do buffet infantil',
+    'Vila Let’s Go com casinhas temáticas coloridas no Espaço Diversão',
   ),
   playground: p(
     'espaco-diversao-playground-panoramico',
@@ -142,7 +142,7 @@ export const photos = {
     800,
     'Diversão',
     'Kid Play e escorregadores',
-    'Vista panorâmica do Espaço Diversão com Kid Play, escorregadores coloridos e mesa de air hockey',
+    'Vista panorâmica do Espaço Diversão com Kid Play e escorregador colorido',
   ),
   // ---- resolução média (~860px) ----
   fachadaNoite: p(
@@ -175,7 +175,7 @@ export const photos = {
     1041,
     'Diversão',
     'Games e autorama',
-    'Sala de games com fliperamas e pista de autorama no Espaço Diversão do buffet infantil',
+    'Sala de games com fliperamas e pista de autorama no Espaço Diversão',
   ),
   circo1Ano: p(
     'decoracao-festa-1-ano-tema-circo',

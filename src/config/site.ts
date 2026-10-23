@@ -14,13 +14,13 @@ const casteloQuery = encodeURIComponent(
 
 export const site: SiteConfig = {
   name: "Let's Go Festas",
-  tagline: 'Buffet infantil na Pampulha, em Belo Horizonte',
+  tagline: 'Espaço para festas infantis na Pampulha, em Belo Horizonte',
   description:
-    "Let's Go Festas: buffet infantil na orla da Lagoa da Pampulha, em Belo Horizonte. Festa Coquetel e Festa Kids com buffet completo, decoração, monitores e um Espaço Diversão com Kid Play de 18 m, Cinema 6D e escorregador 360º.",
+    "Let's Go Festas: espaço para festas infantis na orla da Lagoa da Pampulha, em Belo Horizonte. Festa Coquetel e Festa Kids com buffet completo, decoração, monitores e um Espaço Diversão com Kid Play de 18 m, Cinema 6D e escorregador 360º.",
   url: siteUrl,
   locale: 'pt_BR',
   schemaType: ['LocalBusiness', 'EventVenue'],
-  category: 'Buffet infantil e espaço para festas',
+  category: 'Espaço para festas infantis e eventos',
   yearsOfHistory: 20,
   logo: {
     src: '/images/marca/logo-lets-go-festas.png',

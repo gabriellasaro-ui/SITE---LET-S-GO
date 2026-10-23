@@ -13,7 +13,7 @@ import { SoftCurve } from '@/components/ui/SoftCurve'
 import { CareerForm } from '@/components/forms/CareerForm'
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/Reveal'
 
-const title = 'Trabalhe conosco: vagas em buffet infantil'
+const title = 'Trabalhe conosco: vagas em espaço de festas'
 const description = `Quer trabalhar com festas infantis em BH? Cadastre seu currículo na ${site.name}: monitores, garçons, cozinha, decoração, limpeza e atendimento.`
 
 export const metadata: Metadata = pageMetadata({ title, description, path: '/trabalhe-conosco' })

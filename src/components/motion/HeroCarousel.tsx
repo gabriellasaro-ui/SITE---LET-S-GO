@@ -17,30 +17,68 @@ type Props = {
  */
 export function HeroCarousel({ photos, interval = 6000 }: Props) {
   const [active, setActive] = useState(0)
+  const [next, setNext] = useState<number | null>(null)
+  const [nextLoaded, setNextLoaded] = useState(false)
 
   useEffect(() => {
-    const id = window.setInterval(() => setActive((i) => (i + 1) % photos.length), interval)
-    return () => window.clearInterval(id)
+    const id = window.setTimeout(() => {
+      setNext((active + 1) % photos.length)
+      setNextLoaded(false)
+    }, interval)
+    return () => window.clearTimeout(id)
   }, [active, interval, photos.length])
+
+  useEffect(() => {
+    if (next === null || !nextLoaded) return
+    const id = window.setTimeout(() => {
+      setActive(next)
+      setNext(null)
+      setNextLoaded(false)
+    }, 900)
+    return () => window.clearTimeout(id)
+  }, [next, nextLoaded])
+
+  const displayed = nextLoaded && next !== null ? next : active
+  const show = (index: number) => {
+    if (index === active) {
+      setNext(null)
+      setNextLoaded(false)
+      return
+    }
+    setNext(index)
+    setNextLoaded(false)
+  }
 
   return (
     <>
       <div aria-hidden="true" className="absolute inset-0 -z-20">
-        {photos.map((photo, i) => (
+        <Image
+          src={photos[active].src}
+          alt=""
+          fill
+          quality={75}
+          priority={active === 0}
+          sizes="100vw"
+          className={cn(
+            'object-cover transition-opacity duration-700 ease-in-out',
+            nextLoaded ? 'opacity-0' : 'opacity-100',
+          )}
+        />
+        {next !== null && next !== active ? (
           <Image
-            key={photo.src}
-            src={photo.src}
+            key={photos[next].src}
+            src={photos[next].src}
             alt=""
             fill
-            quality={90}
-            priority={i === 0}
+            quality={75}
             sizes="100vw"
+            onLoad={() => setNextLoaded(true)}
             className={cn(
-              'object-cover transition-opacity duration-[1400ms] ease-in-out',
-              i === active ? 'opacity-100' : 'opacity-0',
+              'object-cover transition-opacity duration-700 ease-in-out',
+              nextLoaded ? 'opacity-100' : 'opacity-0',
             )}
           />
-        ))}
+        ) : null}
       </div>
 
       <div
@@ -52,14 +90,14 @@ export function HeroCarousel({ photos, interval = 6000 }: Props) {
           <button
             key={photo.src}
             type="button"
-            onClick={() => setActive(i)}
+            onClick={() => show(i)}
             aria-label={`Mostrar foto ${i + 1}: ${photo.caption}`}
-            aria-pressed={i === active}
+            aria-pressed={i === displayed}
             className="group relative h-2.5 w-12 overflow-hidden rounded-full bg-white/35 transition hover:bg-white/55"
           >
-            {i === active && (
+            {i === displayed && (
               <span
-                key={active}
+                key={displayed}
                 className="absolute inset-0 origin-left rounded-full bg-white"
                 style={{ animation: `carousel-fill ${interval}ms linear forwards` }}
               />

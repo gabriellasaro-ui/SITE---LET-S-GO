@@ -75,6 +75,11 @@ export const occasions: Occasion[] = [
     icon: 'sparkles',
   },
   {
+    title: 'Formaturas',
+    text: 'Celebrações de conclusão de curso com estrutura completa para reunir formandos, familiares e amigos.',
+    icon: 'graduation',
+  },
+  {
     title: 'Eventos sociais',
     text: 'Casamentos, aniversários adultos e celebrações em família com vista para a lagoa.',
     icon: 'party',

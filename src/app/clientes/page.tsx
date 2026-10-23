@@ -14,7 +14,7 @@ const nota = site.rating ? site.rating.value.toLocaleString('pt-BR', { minimumFr
 const total = site.rating ? new Intl.NumberFormat('pt-BR').format(site.rating.count) : null
 
 const title = nota ? `Clientes e avaliações: nota ${nota} no Google` : 'Clientes e avaliações'
-const description = `Depoimentos de famílias que fizeram festa na Let’s Go, buffet infantil na Pampulha (BH)${
+const description = `Depoimentos de famílias que fizeram festa na Let’s Go, espaço para festas infantis na Pampulha (BH)${
   nota ? `: nota ${nota} no Google, com ${total} avaliações` : ''
 }.`
 

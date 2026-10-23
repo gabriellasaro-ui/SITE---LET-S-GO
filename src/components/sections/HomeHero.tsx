@@ -12,7 +12,7 @@ export function HomeHero() {
         alt={photos.banner.alt}
         fill
         priority
-        quality={90}
+        quality={75}
         sizes="100vw"
         className="-z-20 object-cover object-[center_45%]"
       />
@@ -24,7 +24,7 @@ export function HomeHero() {
 
       <div className="container-site relative flex flex-1 flex-col items-center justify-center pb-[84px] text-center">
         <h1>
-          <span className="sr-only">Buffet infantil na Pampulha, em Belo Horizonte: </span>
+          <span className="sr-only">Espaço para festas infantis na Pampulha, em Belo Horizonte: </span>
           <SplitWords
             text="A festa do seu filho merece um cenário à altura."
             className="text-poster mx-auto block max-w-4xl text-[clamp(2.6rem,6vw,5.4rem)] leading-[1.03]"

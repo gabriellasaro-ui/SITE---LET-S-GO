@@ -9,7 +9,7 @@ export const routes: {
   {
     path: '/',
     title: 'Início',
-    summary: 'Visão geral do buffet infantil, festas, Espaço Diversão, depoimentos e localização.',
+    summary: 'Visão geral do espaço, festas, Espaço Diversão, depoimentos e localização.',
     priority: 1,
     changeFrequency: 'weekly',
   },
@@ -23,7 +23,7 @@ export const routes: {
   {
     path: '/estrutura',
     title: 'Estrutura',
-    summary: 'Salão, conveniências e as 14 atrações do Espaço Diversão.',
+    summary: 'Salão, conveniências e as 3 atrações do Espaço Diversão.',
     priority: 0.9,
     changeFrequency: 'monthly',
   },

@@ -78,7 +78,7 @@ export function PageHero({
               alt={image.alt}
               fill
               priority
-              quality={90}
+              quality={75}
               sizes="100vw"
               className="-z-20 object-cover object-[center_45%]"
             />

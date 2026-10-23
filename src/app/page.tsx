@@ -13,9 +13,9 @@ import { GalleryPreview } from '@/components/sections/GalleryPreview'
 import { SoftCurve } from '@/components/ui/SoftCurve'
 import { FinalCta } from '@/components/sections/FinalCta'
 
-const title = `${site.name} | Buffet infantil na Pampulha em BH`
+const title = `${site.name} | Espaço para festas infantis na Pampulha em BH`
 const description =
-  'Buffet infantil na orla da Lagoa da Pampulha, em BH: Festa Coquetel e Festa Kids com buffet, decoração, monitores e Espaço Diversão com Kid Play e Cinema 6D.'
+  'Espaço para festas infantis na orla da Lagoa da Pampulha, em BH: Festa Coquetel e Festa Kids com buffet, decoração, monitores e Espaço Diversão com Kid Play e Cinema 6D.'
 
 export const metadata: Metadata = pageMetadata({ title, description, path: '/', absoluteTitle: true })
 

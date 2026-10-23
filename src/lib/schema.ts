@@ -116,6 +116,7 @@ export function businessSchema() {
       'Buffet infantil',
       'Aniversário infantil',
       'Festa de 15 anos',
+      'Formatura',
       'Eventos corporativos',
     ],
   }

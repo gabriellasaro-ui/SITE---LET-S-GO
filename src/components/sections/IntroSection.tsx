@@ -21,7 +21,7 @@ export function IntroSection() {
           <Reveal>
             <Eyebrow>Nosso espaço</Eyebrow>
             <h2 className="text-[clamp(2.1rem,4vw,3.4rem)] leading-[1.05]">
-              Um buffet infantil onde cada detalhe vira <span className="text-sticker-primary">diversão</span>.
+              Um espaço para festas onde cada detalhe vira <span className="text-sticker-primary">diversão</span>.
             </h2>
             <p className="text-ink-950/70 mt-6 max-w-lg text-lg leading-relaxed">
               Salão climatizado, área externa com vista para a Lagoa da Pampulha e uma equipe que cuida de tudo, do

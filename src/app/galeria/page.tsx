@@ -11,7 +11,7 @@ import { FinalCta } from '@/components/sections/FinalCta'
 
 const title = 'Galeria de festas infantis em BH'
 const description =
-  'Fotos de festas infantis, decorações temáticas, Espaço Diversão e da estrutura da Let’s Go Festas, buffet infantil na Pampulha, em Belo Horizonte.'
+  'Fotos de festas infantis, decorações temáticas, Espaço Diversão e da estrutura da Let’s Go Festas, na Pampulha, em Belo Horizonte.'
 
 export const metadata: Metadata = pageMetadata({ title, description, path: '/galeria' })
 
